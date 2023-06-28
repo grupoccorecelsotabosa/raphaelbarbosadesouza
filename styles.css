@@ -1,0 +1,102 @@
+body{
+    background-color: #ccf7f7;
+    justify-content: center;
+    display: flex;
+}
+#container{
+position: absolute;
+text-align: center;
+background-color: #f0f8ff;
+width: 400px;
+height: 375px;
+border-radius: 30px;
+box-shadow: 0 2px 4px #000;
+}
+.content_text{
+    position: absolute;
+    top: 120px;
+    left: 7px;
+
+}
+.baseboard_protocol{
+    position: absolute;
+    bottom: 10px;
+    left: 45px;
+}
+.button_ccor{
+    position: absolute;
+    bottom: 70px;
+    right: 130px;
+    background-color: #2c6df8;
+    color: rgb(195, 197, 197);
+    border: 1px solid #000;
+    padding: 5px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px (0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background .10s;
+}
+.button_ccor:hover{
+    background-color: #6291f7;
+    color: rgb(78, 78, 78);
+}
+.button_ccor:active{
+    background-color: #bcdfff;
+    color: rgb(0, 0, 0);
+}
+
+img{
+    width: 50px;
+    height: 50px;
+}
+.logo_ccor{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+.logo_icp{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+.title{
+    position: absolute;
+    top: 50px;
+}
+
+@media (max-width: 400px) {
+    #container{
+        position: relative;
+        width: 400px;
+        height: 400px;
+
+    }
+    .content_text{
+        font-size: 15px;
+        top: 140px;
+    
+    }
+
+}
+@media (max-width: 360px) {
+    #container{
+        position: relative;
+        width: 300px;
+        height: 400px;
+
+    }
+    .content_text{
+        font-size: 13px;
+        top: 140px;
+    }
+    .button_ccor{
+        position: absolute;
+        bottom: 80px;
+        right: 80px;
+    }
+    .baseboard_protocol{
+        position: absolute;
+        bottom: 10px;
+        left: 20px;
+    }
+}
